@@ -5,10 +5,13 @@
         <v-img width="36" height="36" src="/image/gengu.ico"></v-img>
         <v-flex>南京亘古科技公司</v-flex>
       </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="toolbar-items">
       <v-btn flat small nuxt to="/">首页</v-btn>
       <v-btn flat small nuxt to="/goods">产品</v-btn>
-      <v-btn flat small nuxt to="/about">关于</v-btn>
-      <v-spacer></v-spacer>
+      <v-btn flat small nuxt to="/about">关于我们</v-btn>
+      </v-toolbar-items>
+
     </v-toolbar>
     <v-content app>
       <nuxt/>
@@ -36,5 +39,10 @@
     display flex
     align-items center
     justify-content center
+    padding-left: 10%;
+
+  .toolbar-items {
+    padding-right: 10%;
+  }
 </style>
 
