@@ -1,3 +1,4 @@
+<!--suppress ALL -->
 <template>
   <v-app v-scroll="onScroll" >
     <v-toolbar app card color="#fff" height="80">
@@ -10,9 +11,9 @@
             </v-toolbar-title>
             <v-spacer/>
             <v-btn active-class="toobar-btn-active" class="toobar-btn" flat small nuxt to="/">首页</v-btn>
-            <v-btn active-class="toobar-btn-active" class="toobar-btn" flat small nuxt to="/goods">产品</v-btn>
-            <v-btn active-class="toobar-btn-active" class="toobar-btn" flat small nuxt to="/student">学生</v-btn>
-            <v-btn active-class="toobar-btn-active" class="toobar-btn" flat small nuxt to="/about">关于</v-btn>
+            <v-btn active-class="toobar-btn-active" class="toobar-btn" flat small nuxt to="/goods">产品应用</v-btn>
+            <v-btn active-class="toobar-btn-active" class="toobar-btn" flat small nuxt to="/student">创新展示</v-btn>
+            <v-btn active-class="toobar-btn-active" class="toobar-btn" flat small nuxt to="/about">关于我们</v-btn>
           </v-layout>
         </v-flex>
       </v-layout>
