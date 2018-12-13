@@ -58,10 +58,12 @@ export default {
     display flex
     align-items center
     justify-content center
-    padding-left: 10%;
-
-  .toolbar-items {
-    padding-right: 10%;
-  }
+  .toobar-btn
+    color #0f0f0f
+    height 50px
+    padding 0 10px
+  .toobar-btn-active
+    color #006699
+    border-bottom 2px solid #006699
 </style>
 
