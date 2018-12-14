@@ -4,22 +4,22 @@
     <v-toolbar app card color="#fff" height="80">
       <v-layout>
         <v-flex  xs12 sm12 md10 offset-md1 lg8 offset-lg2 xl8 offset-xl2>
-          <v-layout class="app-toolbar">
+          <v-layout class="app-toolbar" justify-center>
             <v-toolbar-title class="app-toolbar-title">
               <v-img width="36" height="36" src="/image/gengu.ico"></v-img>
               <v-flex>&nbsp;南京亘古科技公司&nbsp;</v-flex>
             </v-toolbar-title>
-            <v-spacer/>
-            <v-btn active-class="toobar-btn-active" class="toobar-btn" flat small nuxt to="/">首页</v-btn>
-            <v-btn active-class="toobar-btn-active" class="toobar-btn" flat small nuxt to="/goods">产品应用</v-btn>
-            <v-btn active-class="toobar-btn-active" class="toobar-btn" flat small nuxt to="/student">创新展示</v-btn>
-            <v-btn active-class="toobar-btn-active" class="toobar-btn" flat small nuxt to="/about">关于我们</v-btn>
+            <v-spacer class="hidden-sm-and-down"/>
+            <v-btn active-class="toobar-btn-active" class="toobar-btn hidden-sm-and-down" flat small nuxt to="/">首页</v-btn>
+            <v-btn active-class="toobar-btn-active" class="toobar-btn hidden-sm-and-down" flat small nuxt to="/goods">产品应用</v-btn>
+            <v-btn active-class="toobar-btn-active" class="toobar-btn hidden-sm-and-down" flat small nuxt to="/student">创新展示</v-btn>
+            <v-btn active-class="toobar-btn-active" class="toobar-btn hidden-sm-and-down" flat small nuxt to="/about">关于我们</v-btn>
           </v-layout>
         </v-flex>
       </v-layout>
     </v-toolbar>
     <v-content>
-      <v-layout>
+      <v-layout class="app-content">
         <v-flex  xs12 sm12 md10 offset-md1 lg8 offset-lg2 xl8 offset-xl2>
           <nuxt/>
         </v-flex>
@@ -28,8 +28,11 @@
         <v-icon>vertical_align_top</v-icon>
       </v-btn>
     </v-content>
-    <v-footer app height="auto">
+    <v-footer height="auto">
       <v-card class="flex" flat tile>
+        <v-card-text style="height:200px">
+
+        </v-card-text>
         <v-card-actions class="justify-center">
           &copy;2018 — <strong>njggkj.com</strong>
         </v-card-actions>
@@ -66,5 +69,7 @@ export default {
   .toobar-btn-active
     color #006699
     border-bottom 2px solid #006699
+.app-content
+  background-color #fff
 </style>
 
