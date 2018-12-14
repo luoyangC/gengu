@@ -1,9 +1,7 @@
 <template>
-  <v-layout align-center>
+  <v-layout>
+    <v-flex text-xs-center>
+      关于
+    </v-flex>
   </v-layout>
 </template>
-
-<script>
-export default {
-};
-</script>
