@@ -3,7 +3,7 @@
   <v-app v-scroll="onScroll" >
     <v-toolbar app card color="#fff" height="80">
       <v-layout>
-        <v-flex  xs12 sm12 md10 offset-md1 lg8 offset-lg2 xl8 offset-xl2>
+        <v-flex  xs12 sm12 md10 offset-md1 lg10 offset-lg1 xl10 offset-xl1>
           <v-layout class="app-toolbar" justify-center>
             <v-toolbar-title class="app-toolbar-title">
               <v-img width="36" height="36" src="/image/gengu.ico"></v-img>
@@ -20,7 +20,7 @@
     </v-toolbar>
     <v-content>
       <v-layout class="app-content">
-        <v-flex  xs12 sm12 md10 offset-md1 lg8 offset-lg2 xl8 offset-xl2>
+        <v-flex  xs12 sm12 md12 offset-md0 lg12 offset-lg0 xl12 offset-xl0>
           <nuxt/>
         </v-flex>
       </v-layout>
@@ -28,16 +28,37 @@
         <v-icon>vertical_align_top</v-icon>
       </v-btn>
     </v-content>
-    <v-footer height="auto">
+    <v-layout class="app-foot">
+      <v-flex  >
+    <v-footer  height="auto">
       <v-card class="flex" flat tile>
-        <v-card-text style="height:200px">
-
-        </v-card-text>
-        <v-card-actions class="justify-center">
-          &copy;2018 — <strong>njggkj.com</strong>
+        <v-card-title class="white justify-center">
+          <v-layout justify-center >
+            <v-layout column align-end>
+            <a class="subheading">南京亘古科技有限公司</a>
+            <a class="subheading">公司电话：222448888</a>
+            <a class="subheading">地址:南京信息工程大学</a>
+            </v-layout>
+            <v-layout column align-center>
+          <strong class="subheading" >关于我们</strong>
+              <a class="subheading">公司介绍</a>
+              <a class="subheading">荣誉奖项</a>
+              <a class="subheading">领导风采</a>
+            </v-layout>
+          <v-layout column align-start >
+          <strong class="subheading mr-3">合作单位:</strong>
+            <a class="subheading">南京信息工程大学</a>
+            <a class="subheading">江苏省气象局</a>
+          </v-layout>
+          </v-layout>
+        </v-card-title>
+        <v-card-actions class="white justify-center">
+          &copy;2018 — <strong>Vuetify</strong>
         </v-card-actions>
       </v-card>
     </v-footer>
+   </v-flex>
+    </v-layout>
   </v-app>
 </template>
 
@@ -45,7 +66,8 @@
 export default {
   data() {
     return {
-      offsetTop: 0
+      offsetTop: 0,
+
     }
   },
   methods: {
@@ -71,5 +93,11 @@ export default {
     border-bottom 2px solid #006699
 .app-content
   background-color #fff
+.app-foot
+  background-color #fff
+  .subheading{
+    display block
+  }
+
 </style>
 

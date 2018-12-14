@@ -1,6 +1,6 @@
 <!--suppress ALL -->
 <template>
-  <v-container>
+  <v-container class="container">
     <v-layout mb-5>
       <v-carousel>
         <v-carousel-item v-for="(picture,index) in pictures" :key="index" :src="picture.src"></v-carousel-item>
@@ -208,7 +208,7 @@ export default {
         {
           src: "/image/active/bdb.png"
         }
-      ]
+      ],
     };
   }
 };
@@ -220,5 +220,8 @@ export default {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #f9f9f9;
+}
+.container{
+  padding-bottom:0px;
 }
 </style>
