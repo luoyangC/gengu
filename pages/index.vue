@@ -82,7 +82,7 @@
           </v-layout>
         </v-card>
       </v-layout>
-
+      <hr>
       <v-layout>
         <v-card flat tile color="#fff">
           <v-layout wrap justify-space-around fill-height pt-5 pb-5>
@@ -108,7 +108,7 @@
           </v-layout>
         </v-card>
       </v-layout>
-
+      <hr>
       <v-layout>
         <v-card flat tile color="#fff">
           <v-layout wrap justify-space-around fill-height pt-5 pb-5>
@@ -134,7 +134,7 @@
           </v-layout>
         </v-card>
       </v-layout>
-
+      <hr>
       <v-layout>
         <v-card flat tile color="#fff">
           <v-layout wrap justify-space-around fill-height pt-5 pb-5>
