@@ -14,7 +14,7 @@
       <v-layout align-start justify-space-around row wrap fill-height>
         <v-flex xs12 sm8 md4 lg3 xl2>
           <v-layout align-center justify-center column fill-height>
-            <v-img src="/image/gengu.png" width="100"/>
+            <v-img src="/image/gengu.ico" width="100"/>
             <h1>自主创新研发</h1>
             <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司依托于南京信息工程大学（原南京气象学院）国内一流的气象学科和庞大的气象专业团队.</h4>
           </v-layout>
@@ -28,7 +28,7 @@
         </v-flex>
         <v-flex xs12 sm8 md4 lg3 xl2>
           <v-layout align-center justify-center column fill-height>
-            <v-img src="/image/gengu.png" width="100"/>
+            <v-img src="/image/gengu.ico" width="100"/>
             <h1>科研成果转化</h1>
             <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司成立以来通过引进和吸收国内外新技术，自主创新开发了一系列气象新技术和新产品.</h4>
           </v-layout>

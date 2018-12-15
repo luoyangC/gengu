@@ -20,7 +20,7 @@
     </v-toolbar>
     <v-content>
       <v-layout class="app-content">
-        <v-flex xs12 sm12 md10 offset-md1 lg8 offset-lg1 xl10 offset-xl1>
+        <v-flex xs12 sm12 md10 offset-md1 lg10 offset-lg1 xl10 offset-xl1>
           <nuxt/>
         </v-flex>
       </v-layout>
