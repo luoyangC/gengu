@@ -167,6 +167,14 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: '南京亘古科技',
+      meta: [
+        { hid: 'renderer', name: 'renderer', content: 'webkit|ie-comp|ie-stand' }
+      ]
+    }
+  },
   data() {
     return {
       messages: [

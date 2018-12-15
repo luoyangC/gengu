@@ -34,7 +34,7 @@
           <v-card class="flex" flat tile color="#eee">
             <v-card-title class="justify-center">
               <v-layout justify-center wrap>
-                <v-flex xl3>
+                <v-flex md4 lg3 xl3>
                   <v-layout column align-end>
                     <v-layout column align-start>
                       <strong class="subheading">南京亘古科技有限公司</strong>
@@ -43,7 +43,7 @@
                     </v-layout>
                   </v-layout>
                 </v-flex>
-                <v-flex xl3>
+                <v-flex md4 lg3 xl3>
                   <v-layout column align-center>
                     <strong class="subheading">关于我们</strong>
                     <a class="subheading">公司介绍</a>
@@ -51,7 +51,7 @@
                     <a class="subheading">领导风采</a>
                   </v-layout>
                 </v-flex>
-                <v-flex xl3>
+                <v-flex md4 lg3 xl3>
                   <v-layout column align-start>
                     <v-layout column align-start>
                       <strong class="subheading mr-3">合作单位:</strong>
@@ -75,6 +75,14 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: '南京亘古科技',
+      meta: [
+        { hid: 'renderer', name: 'renderer', content: 'webkit|ie-comp|ie-stand' }
+      ]
+    }
+  },
   data() {
     return {
       offsetTop: 0
