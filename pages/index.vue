@@ -1,8 +1,8 @@
 <!--suppress ALL -->
 <template>
-  <v-container class="container">
+  <v-container class="container" v-resize="onResize">
     <v-layout mb-5>
-      <v-carousel height="600">
+      <v-carousel :height="carouselHeight || 640">
         <v-carousel-item v-for="(picture,index) in pictures" :key="index" :src="picture.src"></v-carousel-item>
       </v-carousel>
     </v-layout>
@@ -175,8 +175,14 @@ export default {
       ]
     }
   },
+  computed: {
+    carouselHeight() {
+      return this.windowSize.x/3
+    }
+  },
   data() {
     return {
+      windowSize: {x: 0,y: 0},
       messages: [
         {
           id: 0,
@@ -218,7 +224,12 @@ export default {
         }
       ],
     };
-  }
+  },
+  methods: {
+    onResize () {
+        this.windowSize = { x: window.innerWidth, y: window.innerHeight }
+      }
+  },
 };
 </script>
 

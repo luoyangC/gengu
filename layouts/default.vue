@@ -1,19 +1,26 @@
 <!--suppress ALL -->
 <template>
   <v-app v-scroll="onScroll">
-    <v-toolbar app color="#fff" height="80">
+    <v-toolbar app flat tile color="#fff" height="80">
       <v-layout>
-        <v-flex xs12 sm12 md10 offset-md1 lg10 offset-lg1 xl10 offset-xl1>
-          <v-layout class="app-toolbar" justify-center>
-            <v-toolbar-title class="app-toolbar-title">
+        <v-flex class="app-toolbar" xs12 sm12 md10 offset-md1 lg10 offset-lg1 xl10 offset-xl1>
+          <v-layout justify-center>
+            <v-toolbar-title class="toolbar-title">
               <v-img width="36" height="36" src="/image/gengu.ico"></v-img>
-              <v-flex>&nbsp;南京亘古科技公司&nbsp;</v-flex>
+              <v-flex class="headline font-weight-bold">&nbsp;南京亘古科技公司&nbsp;</v-flex>
             </v-toolbar-title>
             <v-spacer class="hidden-sm-and-down"/>
             <v-btn active-class="toobar-btn-active" class="toobar-btn hidden-sm-and-down" flat small nuxt to="/">首页</v-btn>
-            <v-btn active-class="toobar-btn-active" class="toobar-btn hidden-sm-and-down" flat small nuxt to="/goods">产品应用</v-btn>
-            <v-btn active-class="toobar-btn-active" class="toobar-btn hidden-sm-and-down" flat small nuxt to="/student">创新展示</v-btn>
-            <v-btn active-class="toobar-btn-active" class="toobar-btn hidden-sm-and-down" flat small nuxt to="/about">关于我们</v-btn>
+            <v-btn active-class="toobar-btn-active" class="toobar-btn hidden-sm-and-down" flat small @mouseenter="showMenu('goods')">产品应用</v-btn>
+            <v-btn active-class="toobar-btn-active" class="toobar-btn hidden-sm-and-down" flat small @mouseenter="showMenu('stude')">高校竞赛</v-btn>
+            <v-btn active-class="toobar-btn-active" class="toobar-btn hidden-sm-and-down" flat small @mouseenter="showMenu('about')">关于我们</v-btn>
+          </v-layout>
+          <v-layout class="toolbar-menu" wrap v-show="menuVisible" @mouseleave="hiddenMenu">
+            <v-flex v-for="(item, index) in menuItem" :key="index"  xs4>
+              <v-card class="menu-item" nuxt :to="item.src">
+                <v-card-title class="subheading font-weight-bold">{{item.title}}</v-card-title>
+              </v-card>
+            </v-flex>
           </v-layout>
         </v-flex>
       </v-layout>
@@ -80,15 +87,50 @@ export default {
       title: '南京亘古科技',
       meta: [
         { hid: 'renderer', name: 'renderer', content: 'webkit|ie-comp|ie-stand' }
-      ]
+      ],
+      menuItem: [],
     }
   },
   data() {
     return {
-      offsetTop: 0
+      offsetTop: 0,
+      menuVisible: false,
+      menuItem: []
     };
   },
   methods: {
+    hiddenMenu() {
+      this.menuVisible = false
+    },
+    showMenu(e) {
+      if (e == 'goods') {
+        this.menuItem = [
+          {title: '激光雷达的产品研发及数据应用', src: ''},
+          {title: '厘米波雷达的产品研发及数据应用', src: ''},
+          {title: '毫米波雷达的产品研发及数据应用', src: ''},
+          {title: '雷电探测技术的产品研发及数据应用', src: ''},
+          {title: '风廓线雷达的产品研发及数据应用', src: ''},
+          {title: '卫星反演的产品研发及数据应用', src: ''},
+          {title: '微波辐射计的产品研发及数据应用', src: ''},
+          {title: '新型探测设备的设计与研发', src: ''},
+          {title: '人工智能及VR虚拟技术在气象中的应用', src: ''},
+        ]
+      }
+      if (e == 'stude') {
+        this.menuItem = [
+          {title: '“北斗杯”全国青少年科技创新大赛', src: ''},
+          {title: 'NOC高等学校信息技术创新与实践活动', src: ''},
+          {title: '学生荣誉奖项', src: '/certificate'},
+        ]
+      }
+      if (e == 'about') {
+        this.menuItem = [
+          {title: '关于我们', src: ''},
+          {title: '联系开发者', src: ''},
+        ]
+      }
+      this.menuVisible = true
+    },
     onScroll(e) {
       this.offsetTop = window.pageYOffset || document.documentElement.scrollTop;
     }
@@ -98,7 +140,12 @@ export default {
 
 <style lang="stylus">
 .app-toolbar
-  .app-toolbar-title
+  position absolute
+  top 0
+  left 0
+  width 100%
+  padding 10px 24px
+  .toolbar-title
     display flex
     align-items center
     justify-content center
@@ -108,7 +155,16 @@ export default {
     padding 0 10px
   .toobar-btn-active
     color #006699
-    border-bottom 2px solid #006699
+  .toolbar-menu
+    width 100%
+    padding 10px
+    background-color rgba(222, 222, 222, .8)
+    .menu-item
+      margin 10px 50px
+      line-height 1.5
+      background-color rgba(255, 255, 255, .9)
+    .menu-item:hover
+      background-color #81D4FA
 
 .app-content
   background-color #fff
