@@ -1,6 +1,6 @@
 <!--suppress ALL -->
 <template>
-  <v-container class="container" v-resize="onResize">
+  <v-container v-resize="onResize">
     <v-layout mb-5>
       <v-carousel :height="carouselHeight || 640">
         <v-carousel-item v-for="(picture,index) in pictures" :key="index" :src="picture.src"></v-carousel-item>

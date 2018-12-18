@@ -81,9 +81,9 @@ export default {
     return {
       imageList: [
         {id: 0, src: 'https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/bdb.png'},
-        {id: 0, src: 'https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/bd%2B.png'},
-        {id: 0, src: 'https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/hlw.png'},
-        {id: 0, src: 'https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/fpga.png'},
+        {id: 1, src: 'https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/bd%2B.png'},
+        {id: 2, src: 'https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/hlw.png'},
+        {id: 3, src: 'https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/fpga.png'},
       ]
     }
   }
