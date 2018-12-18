@@ -9,7 +9,7 @@ __author__ = '骆杨'
 
 
 def compress_image(file_name):
-    image = Image.open('./goods/{}'.format(file_name))
+    image = Image.open('./certificate/{}'.format(file_name))
     width = image.width
     height = image.height
     rate = 1.0  # 压缩率
@@ -26,15 +26,15 @@ def compress_image(file_name):
     height = int(height * rate)  # 新的高
 
     image.thumbnail((width, height), Image.ANTIALIAS)  # 生成缩略图
-    if width < height:
-        cp_im = image.crop((0, 0, width, width))
-    else:
-        cp_im = image.crop((0, 0, height, height))
-    cp_im.save('./goods/{}'.format(file_name))
-
+    # if width < height:
+    #     cp_im = image.crop((0, 0, width, width))
+    # else:
+    #     cp_im = image.crop((0, 0, height, height))
+    cp_im = image.crop((0, 0, width, height))
+    cp_im.save('./certificate/{}'.format(file_name))
 
 def get_file():
-    pwd = os.walk('./goods')
+    pwd = os.walk('./certificate')
     for item in pwd:
         return item[2]
 

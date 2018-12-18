@@ -14,21 +14,21 @@
       <v-layout align-start justify-space-around row wrap fill-height>
         <v-flex xs12 sm8 md4 lg3 xl2>
           <v-layout align-center justify-center column fill-height>
-            <v-img src="/image/gengu.ico" width="100"/>
+            <v-img src="https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/icon/gengu.ico" width="100"/>
             <h1>自主创新研发</h1>
             <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司依托于南京信息工程大学（原南京气象学院）国内一流的气象学科和庞大的气象专业团队.</h4>
           </v-layout>
         </v-flex>
         <v-flex xs12 sm8 md4 lg3 xl2>
           <v-layout align-center justify-center column fill-height>
-            <v-img src="/image/ico-1.png" width="100"/>
+            <v-img src="https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/icon/ico-1.png" width="100"/>
             <h1>专业气象团队</h1>
             <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;团队凭借雄厚的科研积淀、技术积累，专注于科研成果的技术转化，拥有的核心技术都是我国军、地各类气象部门业务现代化建设中急需的关键性技术，具有国际先进水平。</h4>
           </v-layout>
         </v-flex>
         <v-flex xs12 sm8 md4 lg3 xl2>
           <v-layout align-center justify-center column fill-height>
-            <v-img src="/image/gengu.ico" width="100"/>
+            <v-img src="https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/icon/gengu.ico" width="100"/>
             <h1>科研成果转化</h1>
             <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司成立以来通过引进和吸收国内外新技术，自主创新开发了一系列气象新技术和新产品.</h4>
           </v-layout>
@@ -62,7 +62,7 @@
           <v-layout wrap justify-space-around fill-height pt-5 pb-5>
             <v-flex xs12 sm12 md10 lg4 xl3 order-lg1>
               <v-layout justify-center align-center fill-height>
-              <v-img height="300" src="image/goods/1.jpg" aspect-ratio="2.75"></v-img>
+              <v-img height="300" src="https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/goods/1.jpg" aspect-ratio="2.75"></v-img>
               </v-layout>
             </v-flex>
             <v-flex xs12 sm12 md12 lg6 xl5 order-md2>
@@ -88,7 +88,7 @@
           <v-layout wrap justify-space-around fill-height pt-5 pb-5>
             <v-flex xs12 sm12 md12 lg4 xl3 order-lg2 order-md1>
               <v-layout justify-center align-center fill-height>
-              <v-img height="300" src="image/goods/4.jpg" aspect-ratio="2.75"></v-img>
+              <v-img height="300" src="https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/goods/4.jpg" aspect-ratio="2.75"></v-img>
               </v-layout>
             </v-flex>
             <v-flex xs12 sm12 md12 lg6 xl5 order-lg1 order-md2>
@@ -114,7 +114,7 @@
           <v-layout wrap justify-space-around fill-height pt-5 pb-5>
             <v-flex xs12 sm12 md12 lg4 xl3 order-md1>
               <v-layout justify-center align-center fill-height>
-                <v-img height="300" src="image/goods/3.jpg"></v-img>
+                <v-img height="300" src="https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/goods/3.jpg"></v-img>
               </v-layout>
             </v-flex>
             <v-flex xs12 sm12 md12 lg6 xl5 order-md2>
@@ -140,7 +140,7 @@
           <v-layout wrap justify-space-around fill-height pt-5 pb-5>
             <v-flex xs12 sm12 md12 lg4 xl3 order-md1 order-lg2>
               <v-layout justify-center align-center fill-height>
-              <v-img height="300" src="image/goods/5.jpg" aspect-ratio="2.75"></v-img>
+              <v-img height="300" src="https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/goods/5.jpg" aspect-ratio="2.75"></v-img>
               </v-layout>
             </v-flex>
             <v-flex xs12 sm12 md12 lg6 xl5 order-md2 order-lg1>
@@ -211,16 +211,16 @@ export default {
       ],
       pictures: [
         {
-          src: "/image/active/banner.png"
+          src: "https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/active/banner.png"
         },
         {
-          src: "/image/active/bdb.png"
+          src: "https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/active/bdb.png"
         },
         {
-          src: "/image/active/noc.png"
+          src: "https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/active/noc.png"
         },
         {
-          src: "/image/active/bdb.png"
+          src: "https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/active/bdb.png"
         }
       ],
     };
