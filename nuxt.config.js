@@ -28,14 +28,16 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~/assets/style/app.styl'
+    '~/static/style/app.styl',
+    '~/static/font/iconfont.css',
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify'
+    '@/plugins/vuetify',
+    { src: '~/static/font/iconfont.js', ssr: false }
   ],
 
   /*

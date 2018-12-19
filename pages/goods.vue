@@ -7,7 +7,7 @@
           <v-list two-line>
             <v-list-tile exact-active-class='nav-activity' v-for="item in items" :key="item.title" nuxt :to="item.src">
               <v-list-tile-action>
-                <v-icon>view_stream</v-icon>
+                <v-icon class="iconfont">icon-right</v-icon>
               </v-list-tile-action>
               <v-list-tile-content>
                 <v-list-tile-title>{{ item.title }}</v-list-tile-title>

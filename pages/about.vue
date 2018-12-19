@@ -28,9 +28,9 @@ export default {
   data() {
     return {
       items: [
-          { title: '公司介绍', icon: 'dashboard', src: '/about/company' },
-          { title: '成员介绍', icon: 'group', src: '/about/member' },
-          { title: '联系我们', icon: 'code', src: '/about/developer' }
+          { title: '公司介绍', icon: 'iconfont icon-apps', src: '/about/company' },
+          { title: '成员介绍', icon: 'iconfont icon-friend', src: '/about/member' },
+          { title: '联系我们', icon: 'iconfont icon-community', src: '/about/developer' }
         ]
     }
   }

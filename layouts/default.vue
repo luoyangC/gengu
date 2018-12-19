@@ -1,5 +1,5 @@
 <!--suppress ALL -->
-<template>
+<template slot="items" slot-scope="props">
   <v-app v-scroll="onScroll">
     <v-toolbar app flat tile color="#fff" height="80">
       <v-layout>
@@ -35,7 +35,7 @@
         </v-flex>
       </v-layout>
       <v-btn fab bottom right color="light-blue" dark fixed>
-        <v-icon>vertical_align_top</v-icon>
+        <i class="iconfont icon-top" style="font-size:30px"></i>
       </v-btn>
     </v-content>
     <v-layout class="app-foot">

@@ -2,7 +2,7 @@
 <template>
   <v-container v-resize="onResize">
     <v-layout mb-5>
-      <v-carousel :height="carouselHeight || 640">
+      <v-carousel :height="carouselHeight || 640" hide-delimiters prev-icon="iconfont icon-back" next-icon="iconfont icon-right">
         <v-carousel-item v-for="(picture,index) in pictures" :key="index" :src="picture.src"></v-carousel-item>
       </v-carousel>
     </v-layout>
@@ -218,9 +218,6 @@ export default {
         },
         {
           src: "https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/active/noc.png"
-        },
-        {
-          src: "https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/active/bdb.png"
         }
       ],
     };
