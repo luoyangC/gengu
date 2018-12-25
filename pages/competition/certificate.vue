@@ -7,7 +7,7 @@
           <v-layout row wrap>
             <v-flex v-for="i in 4" :key="i" xs4 d-flex>
               <v-card flat tile class="d-flex">
-                <v-img :src="`https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/zkx2 (${i}).png`" aspect-ratio="1.4" class="grey lighten-2">
+                <v-img :src="`/image/certificate/zkx2 (${i}).png`" aspect-ratio="1.4" class="grey lighten-2">
                   <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
                     <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                   </v-layout>
@@ -25,7 +25,7 @@
           <v-layout row wrap>
             <v-flex v-for="i in 11" :key="i" xs4 d-flex>
               <v-card flat tile class="d-flex">
-                <v-img :src="`https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/zkx (${i}).png`" aspect-ratio="1.4" class="grey lighten-2">
+                <v-img :src="`/image/certificate/zkx (${i}).png`" aspect-ratio="1.4" class="grey lighten-2">
                   <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
                     <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                   </v-layout>
@@ -43,7 +43,7 @@
           <v-layout row wrap>
             <v-flex v-for="i in 2" :key="i" xs4 d-flex>
               <v-card flat tile class="d-flex">
-                <v-img :src="`https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/noc (${i}).png`" aspect-ratio="0.6" class="grey lighten-2">
+                <v-img :src="`/image/certificate/noc (${i}).png`" aspect-ratio="0.6" class="grey lighten-2">
                   <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
                     <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                   </v-layout>
@@ -80,10 +80,10 @@ export default {
   data() {
     return {
       imageList: [
-        {id: 0, src: 'https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/bdb.png'},
-        {id: 1, src: 'https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/bd%2B.png'},
-        {id: 2, src: 'https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/hlw.png'},
-        {id: 3, src: 'https://gengu.oss-cn-shanghai.aliyuncs.com/static/image/certificate/fpga.png'},
+        {id: 0, src: '/image/certificate/bdb.png'},
+        {id: 1, src: '/image/certificate/bd%2B.png'},
+        {id: 2, src: '/image/certificate/hlw.png'},
+        {id: 3, src: '/image/certificate/fpga.png'},
       ]
     }
   }

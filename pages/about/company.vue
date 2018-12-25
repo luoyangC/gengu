@@ -1,6 +1,6 @@
 <template>
   <v-layout justify-center>
-    <v-flex xs5>
+    <v-flex xs12 sm12 md10 lg8 xl6>
       <v-card>
         <v-card-title class="display-1 justify-center">
           公司介绍

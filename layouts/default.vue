@@ -34,7 +34,7 @@
           <nuxt/>
         </v-flex>
       </v-layout>
-      <v-btn fab bottom right color="light-blue" dark fixed>
+      <v-btn fab bottom right color="light-blue" dark fixed @click="toTop">
         <i class="iconfont icon-top" style="font-size:30px"></i>
       </v-btn>
     </v-content>
@@ -44,7 +44,7 @@
           <v-card class="flex" flat tile color="#eee">
             <v-card-title class="justify-center">
               <v-layout justify-center wrap>
-                <v-flex md4 lg3 xl3>
+                <v-flex xs4 sm4 md4 lg3 xl3>
                   <v-layout column align-end>
                     <v-layout column align-start>
                       <strong class="subheading">南京亘古科技有限公司</strong>
@@ -53,7 +53,7 @@
                     </v-layout>
                   </v-layout>
                 </v-flex>
-                <v-flex md4 lg3 xl3>
+                <v-flex xs4 sm4 md4 lg3 xl3>
                   <v-layout column align-center>
                     <strong class="subheading">关于我们</strong>
                     <a class="subheading">公司介绍</a>
@@ -61,7 +61,7 @@
                     <a class="subheading">领导风采</a>
                   </v-layout>
                 </v-flex>
-                <v-flex md4 lg3 xl3>
+                <v-flex xs4 sm4 md4 lg3 xl3>
                   <v-layout column align-start>
                     <v-layout column align-start>
                       <strong class="subheading mr-3">合作单位:</strong>
@@ -135,6 +135,15 @@ export default {
       }
       this.menuVisible = true
     },
+    toTop () {
+      this.timer = setInterval (() => {
+        let top = this.offsetTop
+        document.documentElement.scrollTop = top - 60
+        if (top <= 0) {
+          clearInterval(this.timer)
+        }
+      }, 20)
+    },
     onScroll(e) {
       this.offsetTop = window.pageYOffset || document.documentElement.scrollTop;
     }
@@ -162,7 +171,7 @@ export default {
   .toolbar-menu
     width 100%
     padding 10px
-    background-color rgba(222, 222, 222, .8)
+    background-color rgba(250, 250, 250, .9)
     .menu-item
       margin 10px 50px
       line-height 1.5

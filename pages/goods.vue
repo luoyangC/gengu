@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-layout>
-      <v-flex xs2 text-xs-center align-self-start mt-5>
+      <v-flex md5 lg4 xl3 text-xs-center align-self-start mt-5 class="hidden-sm-and-down">
         <v-navigation-drawer permanent class="grey lighten-4">
           <v-toolbar flat class="display-1 text-xs-center">产品应用</v-toolbar>
           <v-list two-line>
@@ -16,7 +16,7 @@
           </v-list>
         </v-navigation-drawer>
       </v-flex>
-      <v-flex xs10 mt-5>
+      <v-flex xs12 sm12 md7 lg8 xl9 mt-5>
         <nuxt/>
       </v-flex>
     </v-layout>
